@@ -45,7 +45,7 @@ class App
       @expressApp[method.toLowerCase()](path, @[handler].bind(this))
 
   startStream: (torrent, cb) ->
-    port = argv.streamport or 8888
+    port = 8888
     console.log "Starting stream from #{torrent}"
     peerflix torrent, (err, engine) =>
       @streamEngine = engine
@@ -54,15 +54,15 @@ class App
         return cb(new Error("Failed to start stream"))
 
       @streamEngine.server.once "listening", =>
-        console.log "Stream started successfully"
+        console.log "Stream started successfully on port #{port}"
         @isStreaming = true
         @streamData =
-          href: "http://#{networkAddress()}:#{[port]}"
+          href: "http://#{networkAddress()}:#{port}"
           torrent: @streamEngine.torrent.name
 
         cb()
 
-      @streamEngine.server.listen argv.streamport or 8888
+      @streamEngine.server.listen port
 
   destroyStream: (cb) ->
     console.log "Destroying current stream of #{@streamData?.torrent}"
