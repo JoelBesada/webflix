@@ -1,0 +1,15 @@
+{
+  "name": "webflix",
+  "version": "0.0.0",
+  "description": "\"A lightweight web app wrapper for peerflix\"",
+  "author": "Joel Besada",
+  "license": "MIT",
+  "dependencies": {
+    "peerflix": "0.1.6",
+    "minimist": "0.0.8",
+    "express": "~3.4.8",
+    "handlebars": "~2.0.0-alpha.2",
+    "consolidate": "~0.10.0",
+    "network-address": "0.0.4"
+  }
+}

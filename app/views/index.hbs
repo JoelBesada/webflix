@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webflix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Webflix</h1>
+  {{# if isStreaming }}
+    <h2 class="currently">Currently streaming</h2>
+    <a href="/stream">{{streamData.torrent}}</a>
+    <form action="/stream/stop" method="post">
+      <input type="submit" value="Stop" class="stop-button">
+    </form>
+  {{else}}
+    <h2>What would you like to stream?</h2>
+    <form action="/stream" method="post">
+      <input type="text" name="torrent" placeholder="Torrent URL" autofocus>
+      <input type="submit" value="Start" class="start-button">
+    </form>
+  {{/if}}
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+</body>
+</html>

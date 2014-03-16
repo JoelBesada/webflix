@@ -1,0 +1,96 @@
+body, input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background: #fafafa;
+  padding: 50px 0;
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  font-size: 26px;
+  left: 20px;
+  bottom: 10px;
+  color: #b3b3b3;
+}
+
+h2 {
+  font-size: 50px;
+  color: #555;
+}
+
+h2.currently {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="submit"] {
+  margin: 0;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type=text] {
+  width: 500px;
+  font-size: 30px;
+  padding: 10px 15px;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 14px 30px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+input[type="submit"]:active {
+  position: relative;
+  top: 1px;
+}
+
+input.start-button {
+  background: #30B130;
+  border: none;
+  color: white;
+  margin-left: 10px;
+}
+
+input.stop-button {
+  background: #E24848;
+  border: none;
+  color: white;
+}
+
+a, a:visited, a:hover {
+  display: inline-block;
+  max-width: 600px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 40px;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #30B130;
+}
+
+a:hover {
+  box-shadow: 0 2px 0 #30B130;
+}
