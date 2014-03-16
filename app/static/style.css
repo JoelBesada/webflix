@@ -52,6 +52,10 @@ input[type=text] {
 }
 
 input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
   text-transform: uppercase;
   font-size: 25px;
   padding: 14px 30px;
