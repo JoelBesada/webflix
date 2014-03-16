@@ -1,6 +1,6 @@
 # Webflix
 
-A lightweight web app wrapper for [peerflix](https://github.com/mafintosh/peerflix). Just input a link to a torrent and the server opens up a stream available in the browser or from media players like VLC. I'm sure someone else already has done this.
+**A lightweight web app wrapper for [peerflix](https://github.com/mafintosh/peerflix). Just input a link to a torrent and the server opens up a stream available in the browser or from media players like VLC. I'm sure someone else already has done this.**
 
 ![index](https://raw.github.com/JoelBesada/webflix/master/screenshots/index.png)
 ![stream](https://raw.github.com/JoelBesada/webflix/master/screenshots/stream.png)
