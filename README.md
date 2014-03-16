@@ -3,6 +3,9 @@
 A lightweight web app wrapper for [peerflix](https://github.com/mafintosh/peerflix).
 I'm sure someone else already has done this.
 
+![index](https://raw.github.com/JoelBesada/webflix/master/screenshots/index.png)
+![stream](https://raw.github.com/JoelBesada/webflix/master/screenshots/stream.png)
+
 ## Installation
 ```
 git clone git@github.com:JoelBesada/webflix.git
